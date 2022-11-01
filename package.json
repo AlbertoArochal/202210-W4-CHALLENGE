@@ -1,0 +1,12 @@
+{
+    "name": "challenge",
+    "version": "1.0.0",
+    "description": "Challenge de la semana 4",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint ."
+    },
+    "author": "Alberto Rocha",
+    "license": "ISC"
+}
