@@ -1,12 +1,6 @@
 body {
     background-color: teal;
     font-family: fixedsys, consolas, monospace;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .window {
@@ -67,29 +61,6 @@ body {
 }
 
 .menubar .menuitem:active {
-    background: #000080;
-    color: #fff;
-}
-
-.icons {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 15px 5px;
-    background: #fff;
-    z-index: 5;
-}
-
-.icons .icon {
-    display: inline-block;
-    margin: 00px 10px;
-    width: 80px;
-    font-size: 12px;
-    text-align: center;
-}
-
-.icon:active>.text {
     background: #000080;
     color: #fff;
 }
@@ -155,22 +126,6 @@ body {
     z-index: -999;
 }
 
-.ui-draggable-dragging {
-    border: dotted 2px #555;
-    background: rgba(0, 0, 0, 0);
-}
-
-#context-menu {
-    position: absolute;
-    border: solid 1px #000;
-    width: 150px;
-    margin: -1px;
-    margin-top: 5px;
-    z-index: 999999999;
-    background: #fff;
-    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .5);
-
-}
 
 #context-menu .context-item {
     padding: 5px;
@@ -181,4 +136,18 @@ body {
 #context-menu .context-item:active {
     background: #000080;
     color: #fff;
+}
+
+section div {
+    margin-left: 20px;
+}
+
+.window2 {
+    max-width: 558px;
+    max-height: 308px;
+}
+
+.window2>.window {
+    background-color: #000;
+    color: white;
 }
