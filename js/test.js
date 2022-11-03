@@ -18,3 +18,16 @@ function tester(table, callback) {
 }
 
 tester();
+
+const elements = document.querySelectorAll('div.test');
+let i = 0;
+
+for (const element of elements) {
+    element.innerHTML = `The result of the test ${i + 1}, ${[
+        testTable[i].a,
+    ]} === ${testTable[i].b} is ${strictEquals(
+        testTable[i].a,
+        testTable[i].b
+    )}`;
+    i++;
+}
