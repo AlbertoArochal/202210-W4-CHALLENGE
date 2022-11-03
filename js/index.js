@@ -1,4 +1,4 @@
-export const strictEquals = (a, b) => {
+export default function strictEquals(a, b) {
     if (isNaN(a) && isNaN(b)) {
         return false;
     }
@@ -9,4 +9,4 @@ export const strictEquals = (a, b) => {
         return true;
     }
     return false;
-};
+}
