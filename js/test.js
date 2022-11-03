@@ -18,3 +18,20 @@ function tester(table, callback) {
 }
 
 tester();
+
+const elements = document.querySelectorAll('div.test');
+const i = 0;
+
+function myLoop() {
+    let i = 0;
+    setTimeout(() => {
+        for (const element of elements) {
+            element.innerHTML = `The result of the test ${
+                i + 1
+            } is ${strictEquals(testTable[i].a, testTable[i].b)}`;
+            i++;
+        }
+    }, 2000);
+}
+
+myLoop();
